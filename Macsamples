@@ -1,0 +1,47 @@
+{
+	"FileVersion": ,
+	"EngineAssociation": 
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": 
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"..."
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "ToolsEditor",
+			"Enabled": true,
+			"TargetAllowList": [
+				"Editor"
+			]
+		},
+		{
+			"Name": "EditorTests",
+			"Enabled": true
+		},
+		{
+			"Name": 
+			"Enabled": true,
+			"SupportedTargetPlatforms": [
+				"w",
+				"Android"
+			]
+		},
+		{
+			"Name":
+			"Enabled": true,
+			"Optional": true,
+			"MarketplaceURL": 
+			"SupportedTargetPlatforms": [
+				"w",
+				"Android"
+			]
+		}
+	]
+}
