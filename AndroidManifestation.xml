@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:mac="http://"
+  package="hybridsample"
+  android:versionCode=".."
+  android:versionName="zero.one"
+  android:installLocation="auto"
+>
+
+  <uses-sdk android:minSdkVersion=".." android:targetSdkVersion=".." />
+
+  <!-- Tell the system this app works in either 3dof or 6dof mode -->
+  <uses-feature
+    android:name="android.hardware.[].headtracking"
+    android:required="true"
+  />
+
+  <mac:uses--sdk
+    mac:minSdkVersion=".."
+    mac:targetSdkVersion=".."
+  />
+
+  <uses-feature
+    android:name="software.handtracking"
+    android:required="false"
+  />
+  <uses-permission android:name="HAND_TRACKING" />
+
+  <!-- Tell the system this app uses experimental extensions -->
+  <uses-feature
+    android:name=
+    android:required="true"
+  />
+  <!-- Tell the system this app 
+  <uses-feature
+    android:name=
+    android:required=
+  />
+  <!-- Tell the system this app uses the virtual machine extensions -->
+  <uses-feature
+    android:name="VIRTUAL_MACHINE"
+    android:required="false"
+  />
+
+  <uses-feature android:Version="0x" />
+
+  <uses-feature
+    android:nafeature "software.overlay"
+    android:required="false"
+  />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-feature
+    android:name="feature.RENDER_MODEL"
+    android:required="false"
+  />
+  <uses-permission android:name="RENDER_MODEL" />
+  <!-- Volume Control -->
+  <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+  <application android:allowBackup="false" android:label="Hybrid Sample">
+    <meta-data
+      android:name=
+      android:value=
+    />
+    <meta-data
+      android:name="handtracking.version"
+      android:value="V2.0"
+    />
+    <meta-data android:name="focusaware" android:value="true" />
+
+    <uses-native-library
+      android:name=
+      android:required="false"
+    />
+
+    <activity
+      android:name=".PancakeActivity"
+      android:screenOrientation="landscape"
+      android:exported="true"
+      android:resizeableActivity="true"
+    >
+      <meta-data
+        android:name="shell.supports_free_resizing"
+        maxSizeX="1600"
+        maxSizeY="1000"
+        minSizeX="800"
+        minSizeY="500"
+        android:value="true"
+      />
+      <meta-data
+        android:name="shell.free_resizing_lock_aspect_ratio"
+        android:value="true"
+      />
+      <layout android:defaultHeight="550dp" android:defaultWidth="800dp" />
+      <meta-data
+        android:name="control_bar_config"
+        android:value="{'show_title':false,'show_report_bug':false,'with_back_button':false, 'use_activity_label':false}"
+      />
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="intent.category(..)" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+
+    <activity
+      android:name="hybridsample.HybridSampleActivity"
+      android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+      android:launchMode="singleTask"
+      android:excludeFromRecents="false"
+      android:screenOrientation="landscape"
+      android:configChanges="screenSize|screenLayout|orientation|keyboardHidden|keyboard|navigation|uiMode"
+      android:exported="true"
+    >
+      <!-- This filter lets the apk show up as a launchable icon. -->
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="intent.category.(..)" />
+        <category android:name="android.intent.category.DEFAULT" />
+      </intent-filter>
+    </activity>
+  </application>
+</manifest>
