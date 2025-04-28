@@ -10,7 +10,7 @@
 
   <uses-sdk android:minSdkVersion=".." android:targetSdkVersion=".." />
 
-  <!-- Tell the system this app works in either 3dof or 6dof mode -->
+  <!-- Tell the system this app works in either + or - ==/ mode -->
   <uses-feature
     android:name="android.hardware.[].h_tracking"
     android:required="true"
