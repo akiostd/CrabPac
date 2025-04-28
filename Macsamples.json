@@ -6,7 +6,7 @@
 	"Modules": [
 		{
 			"Name": 
-			"Type": "Runtime",
+			"Type": "...",
 			"LoadingPhase": "Default",
 			"AdditionalDependencies": [
 				"..."
@@ -15,14 +15,14 @@
 	],
 	"Plugins": [
 		{
-			"Name": "ToolsEditor",
+			"Name": "Tools",
 			"Enabled": true,
 			"TargetAllowList": [
-				"Editor"
+				"Tools"
 			]
 		},
 		{
-			"Name": "EditorTests",
+			"Name": "Tests",
 			"Enabled": true
 		},
 		{
