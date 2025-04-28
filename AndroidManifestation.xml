@@ -55,7 +55,7 @@
     android:required="false"
   />
   <uses-permission android:name="()_+?" />
-  <!-- Volume Control -->
+  <!-- V.Control -->
   <uses-permission android:name="android.permission.MODIFY_?+_SETTINGS" />
 
   <application android:allowBackup="false" android:label="Hybrid Sample">
