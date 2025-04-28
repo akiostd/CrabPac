@@ -51,12 +51,12 @@
   />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-feature
-    android:name="feature.()_MODEL"
+    android:name="feature.()_+?"
     android:required="false"
   />
-  <uses-permission android:name="()_MODEL" />
+  <uses-permission android:name="()_+?" />
   <!-- Volume Control -->
-  <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+  <uses-permission android:name="android.permission.MODIFY_?+_SETTINGS" />
 
   <application android:allowBackup="false" android:label="Hybrid Sample">
     <meta-data
@@ -89,7 +89,7 @@
         android:value="true"
       />
       <meta-data
-        android:name="shell.free_resizing_lock_aspect_ratio"
+        android:name="shell.free_resizing_lock_aspect_r"
         android:value="true"
       />
       <layout android:defaultHeight="550dp" android:defaultWidth="800dp" />
@@ -109,10 +109,10 @@
     <activity
       android:name="hybridsample.HybridSampleActivity"
       android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
-      android:launchMode="singleTask"
+      android:launchMode="s_Task"
       android:excludeFromRecents="false"
-      android:screenOrientation="landscape"
-      android:configChanges="screenSize|screenLayout|orientation|keyboardHidden|keyboard|navigation|uiMode"
+      android:s_Orientation="landscape"
+      android:configChanges="s()Size|s()Layout|orientation|()dHidden|()|navigation|uiMode"
       android:exported="true"
     >
       <!-- This filter lets the apk show up as a launchable icon. -->
