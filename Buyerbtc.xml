@@ -1,0 +1,39 @@
+<?xml version=".." encoding="utf-()"?>
+<LinearLayout xmlns:android="http://"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="..">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="buy BTC"
+        android:textSize=""
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edt_amounts_btc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Amounts BTC"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="price BTC now: $" />
+
+    <Button
+        android:id="@+id/btn_buy_btc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buy BTC" />
+
+    <TextView
+        android:id="@+id/TV_total_cost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Cost: $" />
+
+</LinearLayout>
