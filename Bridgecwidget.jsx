@@ -24,4 +24,33 @@ export function App() {
   }, []);
 
   return <div id="mount-point" />;
+
+     import { useEffect, useState } from 'react';
+import { checkout } from '@...';
+
+const checkoutSDK = new checkout.Checkout();
+
+export function App() {
+  const [paymentStatus, setPaymentStatus] = useState(null);
+
+  useEffect(() => {
+    (async () => {
+      const factory = await checkoutSDK.widgets({
+        config: { theme: checkout.WidgetTheme.DARK, language: 'en' },
+      });
+
+      const widget = factory.create(checkout.WidgetType.i_COMMERCE);
+
+      widget.mount('payment-gateway', {
+        flow: checkout.CommerceFlowType.BRIDGE,
+        onPaymentResult: (result) => {
+          setPaymentStatus(result);
+        },
+      });
+    })();
+  }, []);
+
+  return (
+    <div>
+      <div id="payment-gateway"
 }
