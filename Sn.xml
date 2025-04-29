@@ -1,0 +1,41 @@
+ <LinearLayout xmlns:android="...."
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exchange () with BTC" />
+
+    <Sn
+        android:id="@+id/spn_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/()_list" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="spn Price: 0,00000 BTC" />
+
+    <EditText
+        android:id="@+id/edt_amount_btc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Amount BTC"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btn_exchange_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exchange spn" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel" />
+
+</LinearLayout>
