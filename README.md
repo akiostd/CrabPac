@@ -12,3 +12,5 @@ $ \text{message count_in_} = $
 $ \text{last message timestamp} = \text{current_time} $
 this can be of some help for security || 
 
+# UserAccount
+Stores user id data [balance] amounts of messages in a time window
