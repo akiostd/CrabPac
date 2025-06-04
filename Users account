@@ -1,0 +1,10 @@
+
+let current_timestamp = tx_context::epoch_timestamp_ms(ctx) / ?; // in seconds
+
+        if (current_timestamp - account.last_?_timestamp) < config.spam_window_seconds {
+            account.?_count_in_window = account.?_count_in_window + (?);
+        } else {
+            // Reset in out 
+            account.?_count_in_window = (?/?);
+            account.last_?_timestamp = current_timestamp;
+        }
